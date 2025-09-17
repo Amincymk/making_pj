@@ -154,7 +154,7 @@ main {
   max-width: 700px;
 }
 /*  */
-.section-2-container{
+.section-2-container {
   padding: 50px;
   align-items: center;
 }
@@ -164,48 +164,46 @@ main {
   font-size: 2.5rem;
   margin-bottom: 30px;
 }
-.section-2-container{
+.section-2-container {
   display: flex;
 }
-.line{
+.line {
   width: 3px;
   height: 400px;
   background-color: rgb(211, 210, 210);
 }
-.check-section{
+.check-section {
   display: flex;
   gap: 20px;
 }
- .check-content{
-  
+.check-content {
   display: flex;
   margin-top: 30px;
-  
 }
-.text-container{
+.text-container {
   gap: 10px;
   margin-top: -45px;
   margin-left: 15px;
-} 
+}
 
-.check-content h6{
+.check-content h6 {
   font-weight: 500;
   margin-top: 40px;
   color: #020246;
   font-size: 1rem;
 }
-.check-content p{
-font-weight: 500;
-gap: 10em;
-margin-top: 10px;
- 
+.check-content p {
+  font-weight: 500;
+  gap: 10em;
+  margin-top: 10px;
+
   color: #8e8ea6;
   font-size: 0.8rem;
 }
-.Everything-container{
-  padding: 30px  40px;
+.Everything-container {
+  padding: 30px 40px;
 }
-.logo-section{
+.logo-section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -214,40 +212,40 @@ margin-top: 10px;
   max-width: 700px;
 }
 /* section 3 */
-.section-3{
+.section-3 {
   display: flex;
   gap: 150px;
   margin-top: 50px;
   align-items: center;
 }
-.section-3 img{
+.section-3 img {
   max-width: 566px;
   border-radius: 10px;
 }
-.section-3-text{
+.section-3-text {
   gap: 30px;
   margin-left: 150px;
 }
-.section-3-text h3{
+.section-3-text h3 {
   color: #020246;
   font-weight: 700;
   font-size: 2.5rem;
 }
-.sec-3-span{
+.sec-3-span {
   font-weight: 700;
   margin-top: 40px;
   color: #020246;
-  font-size: 1rem; 
+  font-size: 1rem;
 }
-.section-3-text p{
+.section-3-text p {
   font-weight: 500;
   gap: 10em;
   margin-top: 10px;
-   
-    color: #8e8ea6;
-    font-size: 1rem; 
+
+  color: #8e8ea6;
+  font-size: 1rem;
 }
-.sec-3-btn{
+.sec-3-btn {
   padding: 20px 40px;
   border: none;
   border-radius: 5px;
@@ -256,66 +254,60 @@ margin-top: 10px;
   font-size: 1rem;
   font-weight: 500;
   color: white;
-
 }
 /* section end */
 /* product section begins */
-.product-section{
+.product-section {
   padding: 100px;
   background-color: white;
 }
-.product-section-content h1{
+.product-section-content h1 {
   color: #020246;
   font-weight: 700;
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 40px;
 }
-.div-1{
+.div-1 {
   border-radius: 10px;
   background-color: #030337;
   width: 382px;
   height: 394px;
- 
 }
-.text-content{
+.text-content {
   color: white;
-
 }
-.text-content h4{
+.text-content h4 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-top: 20px;
 }
-.text-content p{
+.text-content p {
   margin-top: 20px;
 }
-.a-class a{
+.a-class a {
   text-decoration: none;
   color: skyblue;
-
 }
-.a-class{
+.a-class {
   margin-top: 20px;
 }
-.content{
+.content {
   align-items: center;
   justify-content: center;
   padding: 40px;
- 
 }
-.card-section{
+.card-section {
   flex-wrap: wrap;
   display: flex;
   gap: 50px;
-
 }
 /* section 4 */
-.section-4{
+.section-4 {
   background-color: whitesmoke;
   padding: 100px;
 }
-.news h1{
+.news h1 {
   color: #020246;
   font-weight: 700;
   font-size: 2.5rem;
@@ -323,93 +315,83 @@ margin-top: 10px;
   margin-bottom: 40px;
   top: 40px;
 }
-.main-1{
-  max-width:400px;
-  padding:40px 20px;
-   background-color: white;
+.main-1 {
+  max-width: 400px;
+  padding: 40px 20px;
+  background-color: white;
   border-radius: 10px;
-  border:rgb(211, 210, 210) 0.5px solid  ;
+  border: rgb(211, 210, 210) 0.5px solid;
   gap: 4em;
-
 }
-.main-1 img{
+.main-1 img {
   max-width: 360px;
   max-height: 250px;
   justify-content: center;
- border-top-left-radius: 10px;
- border-top-right-radius: 10px;
- 
-
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.image-sec span{
+.image-sec span {
   margin-bottom: 20px;
   color: skyblue;
-
 }
 
-.read-sec h4{
+.read-sec h4 {
   color: #020246;
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 20px;
-   margin-top: 20px;
-  
+  margin-top: 20px;
 }
-.read-sec p{
+.read-sec p {
   margin-bottom: 20px;
- 
+
   color: #8e8ea6;
   font-size: 1rem;
 }
-.read-sec a{
+.read-sec a {
   text-decoration: none;
-  color: skyblue; 
+  color: skyblue;
   font-weight: 700;
 }
-.news-card-sec{
+.news-card-sec {
   display: flex;
 
   gap: 40px;
   margin-top: 40px;
 }
 /* end of news card section */
-.big-card-section{
-  
- padding: 386px 350px;
+.big-card-section {
+  padding: 386px 350px;
   background-color: #020246;
   border-radius: 10px;
   margin-top: 200px;
- 
 }
-.big-card-section h1{
+.big-card-section h1 {
   color: white;
   font-weight: 700;
   font-size: 2.5rem;
   margin-top: -300px;
   margin-left: -300px;
 }
-.hear-sec{
-  
+.hear-sec {
   background-color: white;
   border-radius: 10px;
   margin-top: 60px;
   display: grid;
   flex-wrap: wrap;
- 
 }
-.hear-sec p{
+.hear-sec p {
   margin-bottom: 20px;
   color: #020246;
-  
-  padding :10px 30px;
-  
+
+  padding: 10px 30px;
 }
-.sec-div{
+.sec-div {
   flex-wrap: wrap;
   display: flex;
   gap: 2em;
 }
-.sec-div-btn{
+.sec-div-btn {
   padding: 20px 40px;
   border: none;
   border-radius: 5px;
@@ -418,61 +400,65 @@ margin-top: 10px;
   font-size: 1rem;
   font-weight: 500;
   color: white;
-margin-top: 40px;
+  margin-top: 40px;
 }
 /*  */
-.getting-div{
-  /* padding: 100px; */
+.getting-div {
+  
   background-color: rgb(193, 215, 224);
   max-width: 1444px;
   margin-top: 100px;
-  /* max-height: 618px; */
+  border-radius: 15px;
+  
 }
 .getting {
   margin-bottom: 30px;
+  padding: 40px 80px;
 }
-.numbers{
+.numbers {
   margin-bottom: 30px;
- 
-} 
-.btn-link{
- margin-bottom: 30px;
 }
-.getting h1{
+.btn-link {
+  margin-bottom: 30px;
+}
+.getting h1 {
   color: #020246;
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 20px;
-   margin-top: 20px;
+  margin-top: 20px;
 }
-.circle{
+.circle {
   border-radius: 60px;
- 
   margin-bottom: 30px;
   display: flex;
-  margin-left: 15px;
- 
   color: #020246;
   background-color: transparent;
   border: #020246 2px solid;
-  padding: 10px 10px;
+  padding: 8px 15px;
   max-width: 40px;
- align-items: center;
-   margin-left: 6px; 
+  align-items: center;
 }
 
-.number-line{
+.number-line {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   gap: 2em;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   margin-left: 20px;
 }
-
-
-
-
-
-
+.btn-link {
+  gap: 5em;
+}
+.number-line h3 {
+  color: #020246;
+}
+.get-img {
+  max-width: 70%;
+}
+.getting-div-sec {
+  display: flex;
+  justify-content: space-between;
+}
