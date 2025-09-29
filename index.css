@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0%;
+  padding: 0; /* Changed from 0% to 0 for consistency */
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
@@ -19,20 +19,7 @@ body {
   text-transform: capitalize;
 }
 
-.home {
-  display: flex;
-  padding: 30px 100px;
-  align-items: center;
-  gap: 5em;
-}
-
-.nav-links {
-  color: rgb(2, 2, 70);
-  font-weight: 500;
-  font-size: 1.2em;
-  margin-right: 70px;
-}
-
+/* --- Header & Navigation --- */
 header {
   width: 100vw;
   position: fixed;
@@ -41,16 +28,21 @@ header {
   justify-content: space-around;
   padding: 20px 20px;
   background-color: white;
-  margin-bottom: 30px;
+  z-index: 1000; /* Added z-index to keep header on top */
 }
 
-main {
-  padding-top: 10em;
-}
-
-.home-div {
-  gap: 4em;
+.home {
   display: flex;
+  align-items: center;
+  gap: 5em;
+}
+
+.nav-links a {
+  color: rgb(2, 2, 70);
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-right: 30px; /* Reduced margin for better fit on laptops */
+  text-decoration: none; /* Added to apply to 'a' tags */
 }
 
 .btn-1 {
@@ -60,6 +52,7 @@ main {
   background-color: transparent;
   border: none;
   margin-right: 30px;
+  cursor: pointer;
 }
 
 .btn-2 {
@@ -69,119 +62,166 @@ main {
   background-color: transparent;
   border: 0.5px solid black;
   border-radius: 5px;
-  padding: 17px 26px;
+  padding: 10px 20px; /* Reduced padding for better fit */
+  cursor: pointer;
 }
+
+.bar {
+  display: none;
+}
+
+/* --- Main Content & Hero Section --- */
+main {
+  padding-top: 10em;
+}
+
 .hero-section {
-  padding: 150px;
+  padding-top: 150px;
   background-color: white;
 }
+
 .hero-content-container {
   display: flex;
-  gap: 14em;
+  flex-direction: row;
+  gap: 5em; /* Reduced gap */
   align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px; /* Reduced padding */
 }
+
 .hero-content h1 {
-  font-size: 4rem;
+  font-size: 60px;
   color: #030337;
   margin-bottom: 30px;
-  max-width: 506px;
+  max-width: 550px; /* Used max-width instead of fixed width */
 }
+
 .branding {
-  color: #186787;
+  color: #2B62F5;
 }
+
 .hero-content p {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 40px;
+  max-width: 550px; /* Added max-width */
 }
+
 .image-sec img {
   margin-bottom: 40px;
   margin-right: 20px;
+  max-width: 150px; /* Ensure images scale */
+  height: auto;
 }
+
 .trust {
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-left: 7px;
 }
-/* flex content */
 
-.flex-track img {
-  opacity: 1;
-  max-width: 222px;
-}
-.flex-track {
-  max-width: 5439px;
+.trust-div {
+  align-items: center;
   display: flex;
-  gap: 2em;
 }
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Trusted By Section (Flex Track) --- */
 .flex-content h4 {
-  padding: 40px;
+  padding: 40px 0;
   text-align: center;
   color: rgb(2, 2, 70);
   font-weight: 500;
   font-size: 1.2em;
 }
-.flex-content {
-  align-items: center;
-}
-/* section-1 */
 
+.flex-track {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 0 20px 40px;
+  flex-wrap: wrap; /* Added wrap for smaller screens */
+}
+
+.flex-track img {
+  max-width: 150px;
+  height: auto;
+}
+
+
+/* --- Section 1 (The easiest way to diversify) --- */
 .section-1 {
   background-color: whitesmoke;
   padding: 50px;
 }
+
 .section-1-container {
   display: flex;
   align-items: center;
+  justify-content: center; /* Center content */
   gap: 3em;
 }
+
 .section-1-container h2 {
   color: #020246;
   font-weight: 700;
   font-size: 2.5rem;
 }
+
 .section-1-container p {
   font-weight: 500;
   margin-top: 40px;
   color: #020246;
 }
+
 .cote {
   display: flex;
   flex-direction: column;
-  padding: 30px 40px;
+  padding: 30px 0; /* Removed horizontal padding */
 }
+
 .section-1-container img {
-  max-width: 700px;
+  max-width: 450px; /* Reduced max width */
+  height: auto;
 }
-/*  */
+
+/* --- Section 2 (Everything you need in one place) --- */
 .section-2-container {
-  padding: 50px;
+  padding: 50px 20px;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 50px; /* Added gap */
 }
+
 .Everything {
   color: #020246;
   font-weight: 700;
   font-size: 2.5rem;
   margin-bottom: 30px;
 }
-.section-2-container {
-  display: flex;
-}
+
 .line {
   width: 3px;
-  height: 400px;
+  min-height: 400px; /* Changed height to min-height */
   background-color: rgb(211, 210, 210);
 }
+
 .check-section {
   display: flex;
   gap: 20px;
 }
+
 .check-content {
   display: flex;
   margin-top: 30px;
 }
+
 .text-container {
-  gap: 10px;
   margin-top: -45px;
   margin-left: 15px;
 }
@@ -192,61 +232,72 @@ main {
   color: #020246;
   font-size: 1rem;
 }
+
 .check-content p {
   font-weight: 500;
-  gap: 10em;
   margin-top: 10px;
-
   color: #8e8ea6;
   font-size: 0.8rem;
 }
+
 .Everything-container {
   padding: 30px 40px;
 }
+
 .logo-section {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
 }
+
 .section-2-img-container img {
-  max-width: 700px;
+  max-width: 450px; /* Reduced max width */
+  height: auto;
 }
-/* section 3 */
+
+
+/* --- Section 3 (Features of Investing) --- */
 .section-3 {
   display: flex;
-  gap: 150px;
+  justify-content: center;
+  gap: 50px; /* Reduced gap */
   margin-top: 50px;
   align-items: center;
+  padding: 0 50px;
 }
+
 .section-3 img {
-  max-width: 566px;
+  max-width: 450px; /* Reduced max width */
   border-radius: 10px;
+  height: auto;
 }
+
 .section-3-text {
-  gap: 30px;
-  margin-left: 150px;
+  margin-left: 0;
 }
+
 .section-3-text h3 {
   color: #020246;
   font-weight: 700;
   font-size: 2.5rem;
+  margin-bottom: 30px;
 }
+
 .sec-3-span {
   font-weight: 700;
-  margin-top: 40px;
   color: #020246;
   font-size: 1rem;
+  display: block;
 }
+
 .section-3-text p {
   font-weight: 500;
-  gap: 10em;
   margin-top: 10px;
-
   color: #8e8ea6;
   font-size: 1rem;
 }
+
 .sec-3-btn {
-  padding: 20px 40px;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   background-color: rgb(35, 35, 224);
@@ -254,13 +305,16 @@ main {
   font-size: 1rem;
   font-weight: 500;
   color: white;
+  cursor: pointer;
 }
-/* section end */
-/* product section begins */
+
+
+/* --- Product Section --- */
 .product-section {
-  padding: 100px;
+  padding: 50px;
   background-color: white;
 }
+
 .product-section-content h1 {
   color: #020246;
   font-weight: 700;
@@ -268,167 +322,210 @@ main {
   text-align: center;
   margin-bottom: 40px;
 }
+
+.card-section {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 30px; /* Reduced gap */
+  justify-content: center; /* Center cards */
+}
+
 .div-1 {
   border-radius: 10px;
   background-color: #030337;
-  width: 382px;
-  height: 394px;
+  width: 300px; /* Reduced fixed width */
+  height: 350px; /* Reduced fixed height */
+  padding: 20px; /* Added padding to ensure content fits */
+  display: flex; /* Made it a flex container */
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.content {
+  padding: 0; /* Remove padding from nested content div */
+}
+
 .text-content {
   color: white;
 }
+
 .text-content h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Reduced font size */
   font-weight: 600;
   margin-top: 20px;
 }
+
 .text-content p {
-  margin-top: 20px;
+  margin-top: 10px;
+  font-size: 0.9rem;
 }
+
 .a-class a {
   text-decoration: none;
   color: skyblue;
 }
+
 .a-class {
   margin-top: 20px;
 }
-.content {
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-}
-.card-section {
-  flex-wrap: wrap;
-  display: flex;
-  gap: 50px;
-}
-/* section 4 */
+
+/* --- Section 4 (News) --- */
 .section-4 {
   background-color: whitesmoke;
-  padding: 100px;
+  padding: 50px;
 }
+
 .news h1 {
   color: #020246;
   font-weight: 700;
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 40px;
-  top: 40px;
 }
+
+.news-card-sec {
+  display: flex;
+  justify-content: center; /* Center cards */
+  flex-wrap: wrap;
+  gap: 30px; /* Reduced gap */
+  margin-top: 40px;
+}
+
 .main-1 {
-  max-width: 400px;
-  padding: 40px 20px;
+  max-width: 350px; /* Adjusted max-width */
+  padding: 0; /* Adjusted padding to include image */
   background-color: white;
   border-radius: 10px;
   border: rgb(211, 210, 210) 0.5px solid;
-  gap: 4em;
+  overflow: hidden; /* Hide overflow of image */
 }
+
 .main-1 img {
-  max-width: 360px;
-  max-height: 250px;
-  justify-content: center;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0; /* Remove border-radius on image, let main-1 handle it */
 }
-.image-sec span {
-  margin-bottom: 20px;
-  color: skyblue;
+
+.read-sec {
+  padding: 20px;
 }
 
 .read-sec h4 {
   color: #020246;
   font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  font-size: 1.2rem; /* Reduced font size */
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
-.read-sec p {
-  margin-bottom: 20px;
 
+.read-sec p {
+  margin-bottom: 10px;
   color: #8e8ea6;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
+
 .read-sec a {
   text-decoration: none;
   color: skyblue;
   font-weight: 700;
 }
-.news-card-sec {
-  display: flex;
 
-  gap: 40px;
-  margin-top: 40px;
-}
-/* end of news card section */
+
+/* --- Big Card (Testimonials) --- */
 .big-card-section {
-  padding: 386px 350px;
+  padding: 100px 50px; /* Adjusted padding */
   background-color: #020246;
   border-radius: 10px;
-  margin-top: 200px;
+  margin-top: 100px; /* Reduced margin */
+  text-align: center; /* Center content */
 }
+
 .big-card-section h1 {
   color: white;
   font-weight: 700;
-  font-size: 2.5rem;
-  margin-top: -300px;
-  margin-left: -300px;
+  font-size: 2rem; /* Reduced font size */
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 40px;
 }
+
+.sec-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Reduced gap */
+}
+
 .hear-sec {
   background-color: white;
   border-radius: 10px;
-  margin-top: 60px;
-  display: grid;
-  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 350px; /* Added max-width for cards */
+  text-align: left;
 }
-.hear-sec p {
-  margin-bottom: 20px;
-  color: #020246;
 
-  padding: 10px 30px;
+.hear-sec p {
+  margin-bottom: 10px;
+  color: #020246;
+  padding: 0; /* Removed padding */
 }
-.sec-div {
-  flex-wrap: wrap;
-  display: flex;
-  gap: 2em;
-}
+
 .sec-div-btn {
-  padding: 20px 40px;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   background-color: rgb(35, 35, 224);
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: 1rem;
   font-weight: 500;
   color: white;
-  margin-top: 40px;
+  cursor: pointer;
 }
-/*  */
+
+
+/* --- Getting Started Section --- */
 .getting-div {
   background-color: rgb(193, 215, 224);
-  max-width: 1444px;
-  margin-top: 100px;
+  max-width: 1200px; /* Reduced max width */
+  margin: 100px auto 0; /* Centered and reduced margin */
   border-radius: 15px;
+  padding: 40px;
 }
+
+.getting-div-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .getting {
-  margin-bottom: 30px;
-  padding: 40px 80px;
+  padding: 0; /* Removed padding */
+  max-width: 50%;
 }
-.numbers {
-  margin-bottom: 30px;
-}
-.btn-link {
-  margin-bottom: 30px;
-}
+
 .getting h1 {
   color: #020246;
   font-weight: 700;
   font-size: 2rem;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.circle {
-  border-radius: 60px;
   margin-bottom: 30px;
+}
+
+.numbers {
+  margin-bottom: 30px;
+}
+
+.number-line {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+.circle {
+  border-radius: 50%; /* Changed to 50% for perfect circle */
   display: flex;
   color: #020246;
   background-color: transparent;
@@ -436,137 +533,425 @@ main {
   padding: 8px 15px;
   max-width: 40px;
   align-items: center;
+  justify-content: center;
+  min-width: 40px;
 }
 
-.number-line {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 2em;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-left: 20px;
-}
-.btn-link {
-  gap: 5em;
-}
 .number-line h3 {
   color: #020246;
 }
-.get-img {
-  max-width: 70%;
-}
-.getting-div-sec {
+
+.btn-link {
   display: flex;
-  justify-content: space-between;
+  gap: 1em; /* Reduced gap */
 }
-/*  */
+
+.btn-link img {
+  max-width: 150px;
+  height: auto;
+}
+
+.get-img {
+  max-width: 45%; /* Adjusted max width */
+}
+
+.get-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* --- Section 5 (New generation of investors) --- */
 .section-5 {
-  padding: 100px 350px;
+  padding: 100px 50px; /* Adjusted padding */
   background-color: #020246;
   border-radius: 10px;
-  margin-top: 200px;
+  margin: 100px auto 0; /* Centered and reduced margin */
+  max-width: 1200px;
 }
+
 .section-5-div h1 {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem; /* Reduced font size */
   font-weight: 700;
   margin-bottom: 20px;
 }
+
 .section-5-div {
   color: white;
   font-weight: 500;
   text-align: center;
 }
+
 .btn-class {
   background-color: rgb(35, 35, 224);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  align-items: center;
   margin-top: 20px;
   color: white;
   font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
 }
-.btn-class img {
-  align-items: center;
-  margin-top: -30px;
-}
-/* section 6 */
+
+
+/* --- Section 6 (Mailing List) --- */
 .section-6 {
   background-image: url(./IMAGES/mailing-bg-mobile_h1kboz.png);
-  max-width: 70%;
-  padding: 50px 100px;
+  background-size: cover;
+  background-position: center;
+  max-width: 1200px; /* Adjusted max-width */
+  padding: 50px;
   border-radius: 10px;
-  justify-content: center;
-  margin-left: 150px;
-  margin-top: 100px;
-}
-.join h1 {
+  margin: 100px auto; /* Centered */
   color: white;
+}
+
+.join h1 {
   font-size: 2rem;
   font-weight: 600;
+  margin-bottom: 10px;
 }
-.join p {
-  color: white;
-  font-weight: 600;
-}
-.button input {
-  padding: 10px 20px;
 
+.join p {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section-6-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 3em;
+  align-items: flex-start;
+}
+
+.button {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+  gap: 10px;
+}
+
+.button input {
+  padding: 10px 15px;
   font-size: 1rem;
   border: none;
   border-radius: 5px;
   background-color: white;
   text-transform: capitalize;
-  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.button {
-  display: flex;
-  gap: 3em;
-}
-.section-6-div {
-  display: flex;
-  gap: 3em;
-}
-/* footer */
-.footer{
-  padding: 100px 200px;
+
+/* --- Footer --- */
+.footer {
+  padding: 50px; /* Reduced padding */
   background-color: #020246;
   color: white;
 }
-.d-1{
+
+.footer-class {
+  display: flex;
+  gap: 50px; /* Reduced gap */
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: space-between;
+}
+
+.d-1 {
   display: flex;
   flex-direction: column;
+  flex: 1; /* Allow it to take up space */
+  min-width: 200px; /* Ensure a minimum width */
+}
 
+.d-1 img {
+  filter: invert(1); /* To make a black logo white on a dark background */
+  max-width: 150px;
+  margin-bottom: 30px;
 }
-.d-1 img{
-  background-color: white;
-  color: white;
-}
-.footer-class{
-  display: flex;
-  gap: 100px;
-}
-.d a{
-  text-decoration: none;
-  color: white;
- 
-}
-.d{
+
+.d {
   display: flex;
   flex-wrap: wrap;
- gap: 50px;
+  gap: 30px; /* Reduced gap */
+  flex: 2;
+  justify-content: space-around;
 }
-.footer-line{
+
+.d-2 h3 {
+  margin-bottom: 15px !important; /* Added important to override inline style */
+}
+
+.d-2 h4 {
+  margin-bottom: 10px;
+}
+
+.d a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.footer-line {
   height: 1px;
-  width: 1100px;
+  width: 100%; /* Changed from fixed width */
   background-color: white;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
-.footer p{
+
+.footer p {
   color: white;
-  font-weight: 700;
-  margin-top: 40px;
+  font-weight: 400; /* Reduced font weight for body text */
+  margin-top: 20px;
+  font-size: 0.85rem;
+}
+
+/* =======================================
+   RESPONSIVENESS: TABLET (max-width: 768px)
+   ======================================= */
+@media (max-width: 992px) {
+  /* Adjustments for medium screens (e.g., small laptops/large tablets) */
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content-container {
+    padding: 0px 20px;
+    gap: 3em;
+  }
+
+  .section-1-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cote {
+    padding: 30px 20px;
+  }
+
+  .section-1-container img {
+    max-width: 90%;
+  }
+
+  .section-2-container {
+    flex-direction: column;
+  }
+
+  .section-2-img-container img {
+    max-width: 90%;
+  }
+
+  .section-3 {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .section-3-text {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* --- Tablet & Medium Devices --- */
+  header {
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 20px;
+    background-color: white;
+  }
+  .nav-links {
+    display: none;
+  }
+  .btn-div {
+    display: none;
+  }
+
+  .bar {
+    display: block; /* Changed from flex to block */
+    max-width: 30px;
+    height: auto;
+  }
+
+  .hero-content h1 {
+    /* width: 728px; REMOVED FIXED WIDTH */
+    text-align: center;
+    font-size: 40px; /* Reduced font size */
+    margin: 20px auto;
+  }
+  .hero-content p {
+    /* width: 728px; REMOVED FIXED WIDTH */
+    text-align: center;
+    margin: 0px auto 40px;
+  }
+  .hero-content-container {
+    flex-direction: column;
+    gap: 3em;
+    padding: 0 20px;
+  }
+
+  .image-sec {
+    display: flex;
+    margin: auto;
+    /* width: 728px; REMOVED FIXED WIDTH */
+    justify-content: center;
+  }
+  .trust-div {
+    display: flex;
+    /* width: 728px; REMOVED FIXED WIDTH */
+    justify-content: center;
+    margin: auto;
+  }
+
+  /* Section 2 */
+  .Everything-container {
+    padding: 30px 10px;
+  }
+  .line {
+    display: none; /* Hide the vertical line on tablets/mobile */
+  }
+
+  /* Products Section */
+  .div-1 {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    min-height: 300px;
+  }
+
+  /* Getting Started Section */
+  .getting-div-sec {
+    flex-direction: column;
+  }
+  .getting {
+    max-width: 100%;
+    text-align: center;
+  }
+  .number-line {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .btn-link {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .get-img {
+    max-width: 80%;
+  }
+
+  /* Mailing List */
+  .section-6-div {
+    flex-direction: column;
+    text-align: center;
+  }
+  .button {
+    align-items: center;
+  }
+  .button input {
+    max-width: 300px;
+  }
+
+  /* Footer */
+  .footer-class {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .d-1 {
+    text-align: center;
+    align-items: center;
+  }
+  .d {
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
+
+/* =======================================
+   RESPONSIVENESS: MOBILE (max-width: 480px)
+   ======================================= */
+@media (max-width: 480px) {
+  header {
+    padding: 15px 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+    max-width: 100%;
+  }
+  .hero-content p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .image-sec img {
+    max-width: 120px;
+  }
+  .trust {
+    font-size: 14px;
+  }
+
+  /* Sections 1, 2, 3 */
+  .section-1, .product-section, .section-4, .big-card-section, .footer {
+    padding: 30px 15px; /* Reduce all section padding */
+  }
+  .section-1-container h2,
+  .Everything h4,
+  .section-3-text h3,
+  .product-section-content h1,
+  .news h1,
+  .big-card-section h1,
+  .section-5-div h1,
+  .join h1 {
+    font-size: 1.8rem; /* Smaller headings */
+  }
+
+  .check-content {
+    align-items: center;
+  }
+  .text-container {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  .check-content h6 {
+    margin-top: 0;
+  }
+
+  /* News Cards */
+  .main-1 {
+    max-width: 100%;
+  }
+
+  /* Testimonials */
+  .hear-sec {
+    max-width: 100%;
+  }
+
+  /* Getting Started */
+  .getting-div {
+    margin: 50px auto 0;
+    padding: 30px 20px;
+  }
+  .btn-link {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .btn-link img {
+    max-width: 100%;
+  }
+
+  /* Mailing List */
+  .section-6 {
+    padding: 30px 15px;
+    margin: 50px auto;
+  }
+  .button input {
+    max-width: 100%;
+  }
 }
