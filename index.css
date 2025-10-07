@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0; /* Changed from 0% to 0 for consistency */
+  padding: 0; 
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
@@ -28,7 +28,6 @@ header {
   justify-content: space-around;
   padding: 20px 20px;
   background-color: white;
-  z-index: 1000; /* Added z-index to keep header on top */
 }
 
 .home {
@@ -41,8 +40,8 @@ header {
   color: rgb(2, 2, 70);
   font-weight: 500;
   font-size: 1.2em;
-  margin-right: 30px; /* Reduced margin for better fit on laptops */
-  text-decoration: none; /* Added to apply to 'a' tags */
+  margin-right: 30px; 
+  text-decoration: none;
 }
 
 .btn-1 {
@@ -62,7 +61,7 @@ header {
   background-color: transparent;
   border: 0.5px solid black;
   border-radius: 5px;
-  padding: 10px 20px; /* Reduced padding for better fit */
+  padding: 10px 20px; 
   cursor: pointer;
 }
 
@@ -83,17 +82,17 @@ main {
 .hero-content-container {
   display: flex;
   flex-direction: row;
-  gap: 5em; /* Reduced gap */
+  gap: 5em;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 50px; /* Reduced padding */
+  padding: 0px 50px;
 }
 
 .hero-content h1 {
   font-size: 60px;
   color: #030337;
   margin-bottom: 30px;
-  max-width: 550px; /* Used max-width instead of fixed width */
+  max-width: 550px; 
 }
 
 .branding {
@@ -104,13 +103,13 @@ main {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 40px;
-  max-width: 550px; /* Added max-width */
+  max-width: 550px; 
 }
 
 .image-sec img {
   margin-bottom: 40px;
   margin-right: 20px;
-  max-width: 150px; /* Ensure images scale */
+  max-width: 150px;
   height: auto;
 }
 
@@ -144,7 +143,7 @@ main {
   justify-content: center;
   gap: 2em;
   padding: 0 20px 40px;
-  flex-wrap: wrap; /* Added wrap for smaller screens */
+  flex-wrap: wrap; 
 }
 
 .flex-track img {
@@ -153,7 +152,7 @@ main {
 }
 
 
-/* --- Section 1 (The easiest way to diversify) --- */
+/* --- Section 1  --- */
 .section-1 {
   background-color: whitesmoke;
   padding: 50px;
@@ -162,7 +161,7 @@ main {
 .section-1-container {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center content */
+  justify-content: center; 
   gap: 3em;
 }
 
@@ -181,11 +180,11 @@ main {
 .cote {
   display: flex;
   flex-direction: column;
-  padding: 30px 0; /* Removed horizontal padding */
+  padding: 30px 0;
 }
 
 .section-1-container img {
-  max-width: 450px; /* Reduced max width */
+  max-width: 450px; 
   height: auto;
 }
 
@@ -195,7 +194,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px; /* Added gap */
+  gap: 50px; 
 }
 
 .Everything {
@@ -888,6 +887,11 @@ main {
   .hero-content p {
     font-size: 16px;
     max-width: 100%;
+  }
+  .flex-track img{
+    max-width: 30px;
+    max-height: 30px;
+    /* display: grid; */
   }
 
   .image-sec img {
