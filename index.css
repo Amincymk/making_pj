@@ -188,7 +188,7 @@ main {
   height: auto;
 }
 
-/* --- Section 2 (Everything you need in one place) --- */
+/* --- Section 2  --- */
 .section-2-container {
   padding: 50px 20px;
   display: flex;
@@ -206,7 +206,7 @@ main {
 
 .line {
   width: 3px;
-  min-height: 400px; /* Changed height to min-height */
+  min-height: 400px; 
   background-color: rgb(211, 210, 210);
 }
 
@@ -249,12 +249,12 @@ main {
 }
 
 .section-2-img-container img {
-  max-width: 450px; /* Reduced max width */
+  max-width: 450px;
   height: auto;
 }
 
 
-/* --- Section 3 (Features of Investing) --- */
+/* --- Section 3  --- */
 .section-3 {
   display: flex;
   justify-content: center;
@@ -265,7 +265,7 @@ main {
 }
 
 .section-3 img {
-  max-width: 450px; /* Reduced max width */
+  max-width: 450px; 
   border-radius: 10px;
   height: auto;
 }
@@ -325,31 +325,29 @@ main {
 .card-section {
   flex-wrap: wrap;
   display: flex;
-  gap: 30px; /* Reduced gap */
-  justify-content: center; /* Center cards */
+  gap: 30px;
+  justify-content: center; 
 }
 
 .div-1 {
   border-radius: 10px;
   background-color: #030337;
-  width: 300px; /* Reduced fixed width */
-  height: 350px; /* Reduced fixed height */
-  padding: 20px; /* Added padding to ensure content fits */
-  display: flex; /* Made it a flex container */
+  width: 300px; 
+  height: 350px; 
+  padding: 20px; 
+  display: flex; 
   flex-direction: column;
   justify-content: space-between;
 }
 
-.content {
-  padding: 0; /* Remove padding from nested content div */
-}
+
 
 .text-content {
   color: white;
 }
 
 .text-content h4 {
-  font-size: 1.2rem; /* Reduced font size */
+  font-size: 1.2rem; 
   font-weight: 600;
   margin-top: 20px;
 }
@@ -384,25 +382,25 @@ main {
 
 .news-card-sec {
   display: flex;
-  justify-content: center; /* Center cards */
+  justify-content: center; 
   flex-wrap: wrap;
-  gap: 30px; /* Reduced gap */
+  gap: 30px;
   margin-top: 40px;
 }
 
 .main-1 {
-  max-width: 350px; /* Adjusted max-width */
-  padding: 0; /* Adjusted padding to include image */
+  max-width: 350px; 
+  padding: 0; 
   background-color: white;
   border-radius: 10px;
   border: rgb(211, 210, 210) 0.5px solid;
-  overflow: hidden; /* Hide overflow of image */
+  overflow: hidden; 
 }
 
 .main-1 img {
   max-width: 100%;
   height: auto;
-  border-radius: 0; /* Remove border-radius on image, let main-1 handle it */
+  
 }
 
 .read-sec {
@@ -412,7 +410,7 @@ main {
 .read-sec h4 {
   color: #020246;
   font-weight: 700;
-  font-size: 1.2rem; /* Reduced font size */
+  font-size: 1.2rem; 
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -432,17 +430,17 @@ main {
 
 /* --- Big Card (Testimonials) --- */
 .big-card-section {
-  padding: 100px 50px; /* Adjusted padding */
+  padding: 100px 50px; 
   background-color: #020246;
   border-radius: 10px;
-  margin-top: 100px; /* Reduced margin */
-  text-align: center; /* Center content */
+  margin-top: 100px;
+  text-align: center; 
 }
 
 .big-card-section h1 {
   color: white;
   font-weight: 700;
-  font-size: 2rem; /* Reduced font size */
+  font-size: 2rem;
   margin-top: 0;
   margin-left: 0;
   margin-bottom: 40px;
@@ -452,21 +450,21 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* Reduced gap */
+  gap: 20px; 
 }
 
 .hear-sec {
   background-color: white;
   border-radius: 10px;
   padding: 20px;
-  max-width: 350px; /* Added max-width for cards */
+  max-width: 350px;
   text-align: left;
 }
 
 .hear-sec p {
   margin-bottom: 10px;
   color: #020246;
-  padding: 0; /* Removed padding */
+  padding: 0; 
 }
 
 .sec-div-btn {
@@ -485,8 +483,8 @@ main {
 /* --- Getting Started Section --- */
 .getting-div {
   background-color: rgb(193, 215, 224);
-  max-width: 1200px; /* Reduced max width */
-  margin: 100px auto 0; /* Centered and reduced margin */
+  max-width: 1200px; 
+  margin: 100px auto 0; 
   border-radius: 15px;
   padding: 40px;
 }
@@ -498,7 +496,7 @@ main {
 }
 
 .getting {
-  padding: 0; /* Removed padding */
+  padding: 0;
   max-width: 50%;
 }
 
@@ -524,7 +522,7 @@ main {
 }
 
 .circle {
-  border-radius: 50%; /* Changed to 50% for perfect circle */
+  border-radius: 50%; 
   display: flex;
   color: #020246;
   background-color: transparent;
@@ -542,7 +540,7 @@ main {
 
 .btn-link {
   display: flex;
-  gap: 1em; /* Reduced gap */
+  gap: 1em; 
 }
 
 .btn-link img {
@@ -551,7 +549,7 @@ main {
 }
 
 .get-img {
-  max-width: 45%; /* Adjusted max width */
+  max-width: 45%; 
 }
 
 .get-img img {
@@ -563,16 +561,16 @@ main {
 
 /* --- Section 5 (New generation of investors) --- */
 .section-5 {
-  padding: 100px 50px; /* Adjusted padding */
+  padding: 100px 50px; 
   background-color: #020246;
   border-radius: 10px;
-  margin: 100px auto 0; /* Centered and reduced margin */
+  margin: 100px auto 0; 
   max-width: 1200px;
 }
 
 .section-5-div h1 {
   color: white;
-  font-size: 2rem; /* Reduced font size */
+  font-size: 2rem; 
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -601,10 +599,10 @@ main {
   background-image: url(./IMAGES/mailing-bg-mobile_h1kboz.png);
   background-size: cover;
   background-position: center;
-  max-width: 1200px; /* Adjusted max-width */
+  max-width: 1200px; 
   padding: 50px;
   border-radius: 10px;
-  margin: 100px auto; /* Centered */
+  margin: 100px auto;
   color: white;
 }
 
@@ -628,7 +626,7 @@ main {
 
 .button {
   display: flex;
-  flex-direction: column; /* Stack inputs vertically */
+  flex-direction: column; 
   gap: 10px;
 }
 
@@ -645,27 +643,27 @@ main {
 
 /* --- Footer --- */
 .footer {
-  padding: 50px; /* Reduced padding */
+  padding: 50px; 
   background-color: #020246;
   color: white;
 }
 
 .footer-class {
   display: flex;
-  gap: 50px; /* Reduced gap */
-  flex-wrap: wrap; /* Allow wrapping */
+  gap: 50px; 
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .d-1 {
   display: flex;
   flex-direction: column;
-  flex: 1; /* Allow it to take up space */
-  min-width: 200px; /* Ensure a minimum width */
+  flex: 1; 
+  min-width: 200px; 
 }
 
 .d-1 img {
-  filter: invert(1); /* To make a black logo white on a dark background */
+  filter: invert(1);
   max-width: 150px;
   margin-bottom: 30px;
 }
@@ -673,13 +671,13 @@ main {
 .d {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px; /* Reduced gap */
+  gap: 30px; 
   flex: 2;
   justify-content: space-around;
 }
 
 .d-2 h3 {
-  margin-bottom: 15px !important; /* Added important to override inline style */
+  margin-bottom: 15px ; 
 }
 
 .d-2 h4 {
@@ -694,7 +692,7 @@ main {
 
 .footer-line {
   height: 1px;
-  width: 100%; /* Changed from fixed width */
+  width: 100%; 
   background-color: white;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -702,15 +700,13 @@ main {
 
 .footer p {
   color: white;
-  font-weight: 400; /* Reduced font weight for body text */
+  font-weight: 400;
   margin-top: 20px;
   font-size: 0.85rem;
 }
 
-/* =======================================
-   RESPONSIVENESS: TABLET (max-width: 768px)
-   ======================================= */
-@media (max-width: 992px) {
+/* laptop */
+@media (max-width: 1440px) {
   /* Adjustments for medium screens (e.g., small laptops/large tablets) */
   .hero-content h1 {
     font-size: 48px;
@@ -774,39 +770,66 @@ main {
   }
 
   .bar {
-    display: block; /* Changed from flex to block */
+    display: block; 
     max-width: 30px;
     height: auto;
   }
 
   .hero-content h1 {
-    /* width: 728px; REMOVED FIXED WIDTH */
+   
     text-align: center;
-    font-size: 40px; /* Reduced font size */
+    font-size: 40px;
     margin: 20px auto;
   }
   .hero-content p {
-    /* width: 728px; REMOVED FIXED WIDTH */
+  
     text-align: center;
-    margin: 0px auto 40px;
+    margin: auto ;
   }
   .hero-content-container {
     flex-direction: column;
     gap: 3em;
     padding: 0 20px;
   }
+  .getting-div{
+    margin-top: 40px;
+  }
+  .getting{
+    align-items: center;
+    justify-content: left;
+  }
 
   .image-sec {
     display: flex;
     margin: auto;
-    /* width: 728px; REMOVED FIXED WIDTH */
+   
     justify-content: center;
   }
   .trust-div {
     display: flex;
-    /* width: 728px; REMOVED FIXED WIDTH */
+    
     justify-content: center;
     margin: auto;
+  }
+  .hear-sec{
+    padding: 30px;
+    
+  }
+  .getting-div{
+    margin-top: 40px;
+  }
+  .news-card-sec{
+    padding:50px 40px;
+  }
+  .image-sec{
+    max-width:  780px;
+    flex-direction: column;
+    padding: 20px ;
+    
+    align-items: left;
+    justify-content: start;
+    margin-left: -1px;
+    /* height: 40px; */
   }
 
   /* Section 2 */
@@ -814,7 +837,7 @@ main {
     padding: 30px 10px;
   }
   .line {
-    display: none; /* Hide the vertical line on tablets/mobile */
+    display: flex;
   }
 
   /* Products Section */
@@ -856,6 +879,11 @@ main {
   .button input {
     max-width: 300px;
   }
+  .image-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
   /* Footer */
   .footer-class {
@@ -870,12 +898,15 @@ main {
     justify-content: space-between;
     gap: 30px;
   }
+  .footer img{
+    display: flex;
+    direction: column;
+
+  }
 }
 
-/* =======================================
-   RESPONSIVENESS: MOBILE (max-width: 480px)
-   ======================================= */
-@media (max-width: 480px) {
+/* media mobile */
+@media (max-width: 676px) {
   header {
     padding: 15px 10px;
   }
@@ -889,13 +920,17 @@ main {
     max-width: 100%;
   }
   .flex-track img{
-    max-width: 30px;
-    max-height: 30px;
-    /* display: grid; */
+    max-width: 70px;
+    max-height: 70px;
+    display: flex;
+  }
+  .flex-track{
+    display: flex;
+   
   }
 
   .image-sec img {
-    max-width: 120px;
+    max-width: 100px;
   }
   .trust {
     font-size: 14px;
@@ -903,7 +938,7 @@ main {
 
   /* Sections 1, 2, 3 */
   .section-1, .product-section, .section-4, .big-card-section, .footer {
-    padding: 30px 15px; /* Reduce all section padding */
+    padding: 30px 15px; 
   }
   .section-1-container h2,
   .Everything h4,
@@ -913,8 +948,9 @@ main {
   .big-card-section h1,
   .section-5-div h1,
   .join h1 {
-    font-size: 1.8rem; /* Smaller headings */
+    font-size: 1.8rem; 
   }
+
 
   .check-content {
     align-items: center;
@@ -939,7 +975,7 @@ main {
 
   /* Getting Started */
   .getting-div {
-    margin: 50px auto 0;
+    margin:  auto ;
     padding: 30px 20px;
   }
   .btn-link {
