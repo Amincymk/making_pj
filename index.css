@@ -8,6 +8,9 @@
 
 body {
   background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav-links {
@@ -482,7 +485,7 @@ main {
 
 /* --- Getting Started Section --- */
 .getting-div {
-  background-color: rgb(193, 215, 224);
+  background-color: #f0f4fd;
   max-width: 1200px; 
   margin: 100px auto 0; 
   border-radius: 15px;
@@ -704,6 +707,15 @@ main {
   margin-top: 20px;
   font-size: 0.85rem;
 }
+header,
+.hero-section,
+.product-section,
+.section-4,
+footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* laptop */
 @media (max-width: 1440px) {
@@ -791,13 +803,25 @@ main {
     gap: 3em;
     padding: 0 20px;
   }
-  .getting-div{
+  .getting-div {
     margin-top: 40px;
+
+  }
+  .getting-div-sec{
+    justify-content: start;
   }
   .getting{
+    /* align-items: center;
+    justify-content: left; */
+  }
+  .number-line .a  .b .c {
+    display: grid;
+    
     align-items: center;
     justify-content: left;
+    /* margin-left: 30px; */
   }
+
 
   .image-sec {
     display: flex;
